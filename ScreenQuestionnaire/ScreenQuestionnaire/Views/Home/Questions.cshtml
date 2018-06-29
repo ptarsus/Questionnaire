@@ -1,0 +1,87 @@
+﻿@{
+    ViewBag.Title = "Contact";
+}
+<script type="text/javascript">
+    function revealAnswer(answerNumber) {
+        var x = document.getElementById(answerNumber);
+        if (x.style.display === "none") {
+            x.style.display = "block";
+        }
+        else {
+            x.style.display = "none";
+        }
+    }
+</script>
+
+
+<h2>Question 1:</h2>
+<h4>What is your favorite programming language and why?</h4>
+
+<button type="button" class="btn btn-secondary" onclick="revealAnswer('answer1')">Toggle Answer</button>
+
+<br />
+<br />
+
+<div id="answer1" style="display: none">
+    <p>
+        C# was the first programming language I learned, and being a child of the 90s, I heavily value nostalgia! I attribute a good amount of my love of the language to that, but I also
+        find it easy to use, extremely intuitive, and very powerful. While many languages can fit many roles, I find that C# can adapt itself to so many uses, be they web-based or old school desktop applications. 
+        It acted as a fine ramp from my early scripting days into learning real object-oriented programming, and will always have a special place in my heart as a result.
+        <br />I'm just glad they didn't stick with the original name... Cool.
+    </p>
+</div>
+
+<br />
+
+<h2>Question 2:</h2>
+<h4>Do you prefer to use tabs or spaces, and why?</h4>
+
+<button type="button" class="btn btn-secondary" onclick="revealAnswer('answer2')">Toggle Answer</button>
+
+<br />
+<br />
+
+<div id="answer2" style="display: none">
+    <p>
+        Tabs; Mostly because it's what I taught myself on, but also I appreciate a slightly smaller file size and because I find it's far easier on the thumbs.
+    </p>
+</div>
+
+<br />
+
+<h2>Question 3:</h2>
+<h4>Do you have a <a href="http://www.GitHub.com/" target="_blank" style="color: inherit; text-decoration: none;">GitHub</a> account?</h4> <!--Hidden link!-->
+
+<button type="button" class="btn btn-secondary" onclick="revealAnswer('answer3')">Toggle Answer</button>
+
+<br />
+<br />
+
+<div id="answer3" style="display: none">
+    <p>
+        I do! My github account is 'ptarsus'. It was created to upload this project, as until now I've mostly absorbed the code of others rather than posted anything myself.
+    </p>
+</div>
+
+<br />
+
+<h2>Question 4:</h2>
+<h4>What does JSON stand for?</h4>
+
+<button type="button" class="btn btn-secondary" onclick="revealAnswer('answer4')">Toggle Answer</button>
+
+<br />
+<br />
+
+<div id="answer4" style="display: none">
+    <p>
+        JavaScript Object Notation.
+    </p>
+</div>
+
+<br />
+
+<button type="button" class="btn btn-primary" style="float: right" onclick="location.href='@Url.Action("Index", "Home")'">Back to Home</button>
+
+<br />
+<br />
